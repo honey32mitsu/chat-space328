@@ -1,0 +1,24 @@
+.side-bar
+  .group-info
+    .group-name
+      グループ名
+    .comment
+      コメント
+  .name
+    .name__box
+      ユーザーネーム
+    .icon__btn
+      = link_to "#", class: "icon__btn__left" do
+        = icon('fas', 'eye')
+      = link_to "#", class: "icon__btn__right" do
+        = icon('fas', 'drafting-compass')
+  .text-form
+    .input-box
+      .text
+        %input{class:"text__input" ,placeholder:"メッセージを入力して下さい", type:"text"}
+      .image
+        %label{class: "image__btn"}
+          = icon('fas', 'images')
+          %input{type: "file" , class: "image__btn__inner"}
+    .submit
+      %input{type:"submit", name:"commit", value:"送信", class:"submit--btn"}

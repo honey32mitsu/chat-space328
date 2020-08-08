@@ -1,0 +1,89 @@
+.main-chat {
+background-color: white;
+height: 100vh;
+width: calc(100vw - 300px);
+flex-direction: column;
+}
+
+.main-header {
+  height: 130px;
+  background-color: $mainColor;
+  width: calc(100vw - 300px);
+  border: solid;
+  border-radius: 12px;
+  justify-content: space-between;
+  .main-box {
+    background-color: $mainColor;
+    height: 110px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    .main-group {
+      font-size: 20px;
+      background-color: $mainColor;
+      margin: 35px 40px 20px 0 ;
+      color: $fontColor;
+      padding: 0 0 0 30px;
+    }
+    .main-member {
+      font-size: 12px;
+      background-color: $mainColor;
+      color: $fontColor;
+      padding: 0 0 0 30px;
+    }
+  }
+  .edit {
+    @include direction();
+    background-color: $mainColor;
+    height: 110px;
+    width: 200px;
+    display: flex;
+    border-radius: 15px;
+    &__btn {
+      height: 40px;
+      line-height: 40px;
+      text-decoration: none;
+      color: $fontColor;
+      border: solid 1px black;
+      padding: 0 20px;
+      border-radius: 12px;
+    }
+  }
+}
+
+.message {
+  background-color: $mainColor;
+  height: 100vh;
+  width: calc(100vw - 300px);
+  border: solid;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  .message-vew {
+    background-color: $mainColor;
+    height: 100px;
+    width: 300px;
+    justify-content: space-between;
+    margin: 35px 0 0 35px;
+    .member {
+      background-color: $mainColor;
+      height: 30px;
+      width: 80pxpx;
+      color: $fontColor;
+    }
+    .date {
+      background-color: $mainColor;
+      height: 20px;
+      width: 50px;
+      color: $fontColor;
+    }
+  }
+  .comment-box {
+    background-color: black;
+    height: 50px;
+    width: 300px;
+    margin: 0 0 0 35px;
+    color: white;
+  }
+}
